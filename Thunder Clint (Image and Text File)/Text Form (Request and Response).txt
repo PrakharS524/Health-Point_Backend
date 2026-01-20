@@ -1,0 +1,89 @@
+1.Resister User 
+	Reuest:-
+		{
+		  "name": "Md Javed",
+		  "email": "javedmansoori369@gmail.com",
+		  "userName": "javed",
+		  "mobileNumber": "9876543210",
+		  "password": "javed2004",
+		  "confirmPassword": "javed2004"
+		}
+	
+	Response:-
+		{
+		  "user": {
+				"name": "Md Javed",
+				"userName": "javed",
+				"email": "javedmansoori369@gmail.com"
+			  }
+		}
+
+2.Forget Password Send Mail 
+	Reuest:-
+		{
+		  "email": "javedmansoori369@gmail.com"
+		}
+		
+	Response:-
+		{
+		  "message": "Check email to send link for create new password"
+		}
+	
+3.Login user 
+	Request :-
+		{
+		  "email": "javedmansoori369@gmail.com",
+		  "password": "javed2004"
+		}
+	
+	Response:-
+		{
+		  "user": {
+				"name": "Md Javed",
+				"userName": "javed",
+				"email": "javedmansoori369@gmail.com"
+			  }
+		}
+
+4.Update profile
+	Reuest:-
+		{
+		  "email": "javedmansoori369@gmail.com",
+		  "name": "Md Javed Mansoori",
+		  "mobileNumber": "9876543210",
+		  "stateName": "Maharashtra",
+		  "district": "Mumbai Suburban",
+		  "city": "Mumbai",
+		  "address": "Andheri East"
+		}
+		
+	Response:-
+		{
+		  "message": "User profile updated successfully"
+		}
+
+5.Forget Password Send Mail	
+	Reuest:-
+		{
+		  "email": "javedmansoori369@gmail.com"
+		}
+		
+	Response:-
+		{
+		  "message": "Check email to send link for create new password"
+		}
+		
+6.Forget Password Reset
+	Reuest:-
+		{ 
+		   "email": "javedmansoori369@gmail.com",
+		   "userName": "javed",
+		   "newPassword": "javed2006",
+		   "confirmPassword": "javed2006"
+		}
+		// you are not create field email and userName
+	
+	Response:-
+		{
+		  "message": "Password updated successfully"
+		}
