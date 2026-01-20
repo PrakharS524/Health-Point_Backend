@@ -1,4 +1,4 @@
-package com.HealthPoint.entity;
+package com.HealthPoint.entity.UserManagementEntity;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

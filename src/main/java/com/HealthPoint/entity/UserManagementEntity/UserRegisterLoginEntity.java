@@ -1,4 +1,4 @@
-package com.HealthPoint.entity;
+package com.HealthPoint.entity.UserManagementEntity;
 
 import java.time.LocalDate;
 
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
 
 import lombok.Data;
 

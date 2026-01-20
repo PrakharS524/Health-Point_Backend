@@ -1,14 +1,14 @@
-package com.HealthPoint.repo;
+package com.HealthPoint.repo.UserManagementRepo;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.HealthPoint.entity.UserRegisterLoginEntity;
+import com.HealthPoint.entity.UserManagementEntity.UserRegisterLoginEntity;
 
 @Repository
-public interface UserRegisterLoginRepo extends JpaRepository<UserRegisterLoginEntity, Integer> {
+public interface UserRepo extends JpaRepository<UserRegisterLoginEntity, Integer> {
    
 	boolean existsByEmail(String email); // check duplicate email
     

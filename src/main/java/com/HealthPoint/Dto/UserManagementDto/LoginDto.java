@@ -1,4 +1,4 @@
-package com.HealthPoint.Dto;
+package com.HealthPoint.Dto.UserManagementDto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class UserLoginDTO {
+public class LoginDto {
 	@NotBlank(message = "Email is required")
     @Email(message = "Enter a valid email")
     @Size(max = 100, message = "Email must be less than 100 characters")

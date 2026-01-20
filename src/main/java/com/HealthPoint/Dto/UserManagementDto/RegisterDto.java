@@ -1,4 +1,4 @@
-package com.HealthPoint.Dto;
+package com.HealthPoint.Dto.UserManagementDto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class UserRegisterDTO {
+public class RegisterDto {
 	@NotBlank(message = "Name is required")
     @Size(min = 2, max = 50, message = "Name must be between 2 and 50 characters")
     @Pattern(regexp = "^[a-zA-Z\\s]+$", message = "Name must contain only letters and spaces")
